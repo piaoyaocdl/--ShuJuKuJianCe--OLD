@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Database Name="sudaitswell" Class="SJDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="sudaitswell" Class="ShuJuKuDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
   <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.0.188;Initial Catalog=sudaitswell;Persist Security Info=True;User ID=sudaitswell" SettingsObjectName="数据库检测.Properties.Settings" SettingsPropertyName="sudaitswellConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.air_sterilize" Member="air_sterilize">
     <Type Name="air_sterilize">

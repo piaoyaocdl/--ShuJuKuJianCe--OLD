@@ -70,10 +70,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MODEL\SJ.designer.cs">
+    <Compile Include="MODEL\Biaotiaoshu.cs" />
+    <Compile Include="MODEL\ShuJuKu.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>SJ.dbml</DependentUpon>
+      <DependentUpon>ShuJuKu.dbml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -88,16 +89,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="MODEL\SJ.dbml.layout">
-      <DependentUpon>SJ.dbml</DependentUpon>
+    <None Include="MODEL\ShuJuKu.dbml.layout">
+      <DependentUpon>ShuJuKu.dbml</DependentUpon>
     </None>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="MODEL\SJ.dbml">
+    <None Include="MODEL\ShuJuKu.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>SJ.designer.cs</LastGenOutput>
+      <LastGenOutput>ShuJuKu.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
     <None Include="Properties\Settings.settings">

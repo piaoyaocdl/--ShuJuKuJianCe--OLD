@@ -23,7 +23,7 @@ namespace 数据库检测.MODEL
 	
 	
 	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="sudaitswell")]
-	public partial class SJDataContext : System.Data.Linq.DataContext
+	public partial class ShuJuKuDataContext : System.Data.Linq.DataContext
 	{
 		
 		private static System.Data.Linq.Mapping.MappingSource mappingSource = new AttributeMappingSource();
@@ -320,31 +320,31 @@ namespace 数据库检测.MODEL
     partial void Deletesys_user(sys_user instance);
     #endregion
 		
-		public SJDataContext() : 
+		public ShuJuKuDataContext() : 
 				base(global::数据库检测.Properties.Settings.Default.sudaitswellConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public SJDataContext(string connection) : 
+		public ShuJuKuDataContext(string connection) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public SJDataContext(System.Data.IDbConnection connection) : 
+		public ShuJuKuDataContext(System.Data.IDbConnection connection) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public SJDataContext(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
+		public ShuJuKuDataContext(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public SJDataContext(System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
+		public ShuJuKuDataContext(System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();

@@ -11,8 +11,8 @@
             <RowDefinition Height="30"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Button x:Name="gengxinshujuUI" Content="更新数据" Margin="0,5,10,0" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Right" Width="75" Height="22" Foreground="Red" Background="#FF00FFD1" BorderBrush="{x:Null}"/>
-        <DataGrid x:Name="biaotiaoshuUI"  AutoGenerateColumns="False" IsReadOnly="True" ItemsSource="{Binding}">
+        <Button x:Name="gengxinshujuUI" Click="gengxinshujuUI_Click" Content="更新数据" Margin="0,5,10,0" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Right" Width="75" Height="22" Foreground="Red" Background="#FF00FFD1" BorderBrush="{x:Null}"/>
+        <DataGrid x:Name="biaotiaoshuUI" SelectionChanged="biaotiaoshuUI_SelectionChanged"  AutoGenerateColumns="False" IsReadOnly="True" ItemsSource="{Binding}">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding biaoming}" Header="表名"/>
                 <DataGridTextColumn Binding="{Binding jiutiaoshu}"  Header="旧条数"/>
