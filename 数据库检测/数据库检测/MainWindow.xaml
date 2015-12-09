@@ -4,8 +4,23 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:数据库检测"
-        mc:Ignorable="d" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Height="600" Width="1000" Title="数据库检测">
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Height="600" Width="1000" Title="数据库检测" Icon="PIC/ooopic_1449624433.ico">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="385"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button x:Name="gengxinshujuUI" Content="更新数据" Margin="0,5,10,0" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Right" Width="75" Height="22" Foreground="Red" Background="#FF00FFD1" BorderBrush="{x:Null}"/>
+        <DataGrid x:Name="biaotiaoshuUI"  AutoGenerateColumns="False" IsReadOnly="True" ItemsSource="{Binding}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding biaoming}" Header="表名"/>
+                <DataGridTextColumn Binding="{Binding jiutiaoshu}"  Header="旧条数"/>
+                <DataGridTextColumn Binding="{Binding xintiaoshu}"  Header="新条数"/>
+                <DataGridTextColumn Binding="{Binding bianhua}"  Header="变化"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid x:Name="xiangxiUI" IsReadOnly="True" Grid.Row="2" ItemsSource="{Binding}"/>
+
     </Grid>
 </Window>
